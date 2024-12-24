@@ -18,5 +18,6 @@ num1 = float(input("18"))
 num2 = float(input("19 "))
 
 
+
 sum_result = num1 + num2
 print("ორივე რიცხვის ჯამი:", sum_result)
