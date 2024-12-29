@@ -20,3 +20,45 @@ print(f"{gigi} იქნება {16 + 10} წლის.")
 print(f"{luka} იქნება {17 + 10} წლის.")
 print(f"{datuna} იქნება {18 + 10} წლის.")
 
+
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+        }
+        .content {
+            text-align: center;
+        }
+        a {
+            font-size: 20px;
+            text-decoration: none;
+            color: #ff6347;
+            padding: 10px 20px;
+            background-color: #000;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        a:hover {
+            background-color: #ff6347;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <p>გადასაადგილებლად დაჭერით ბმულზე:</p>
+            <a href="https://youtu.be/4sgqfOoq2tk" target= >Goa YouTube</a>
+        </div>
+    </div>
+</body>
+</html>
