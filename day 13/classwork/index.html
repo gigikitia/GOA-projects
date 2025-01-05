@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>რეგისტრაცია</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>რეგისტრაცია</h2>
+        <form id="registrationForm">
+             for="firstName">სახელი:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+             for="lastName">გვარი:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+             for="email">Gmail:</label>
+            <input type="email" id="email" name="email" required>
+
+             for="age">ასაკი:</label>
+            <input type="number" id="age" name="age" required>
+
+             for="password">პაროლი:</label>
+            <input type="password" id="password" name="password" required>
+
+            for="confirmPassword">გაიმეორეთ პაროლი:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+            <button type="submit">რეგისტრაცია</button>
+        </form>
+        <div id="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
