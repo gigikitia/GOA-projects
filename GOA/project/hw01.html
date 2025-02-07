@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>პროგრამირების კურსები</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>პროგრამირების კურსები</h1>
+
+    <form>
+        <label for="name">სახელი:</label>
+        <input type="text" id="name" name="name" placeholder="შეიყვანეთ სახელი" required>
+
+        <label for="email">ელ. ფოსტა:</label>
+        <input type="email" id="email" name="email" placeholder="შეიყვანეთ ელ. ფოსტა" required>
+
+        <label for="course">აირჩიეთ კურსი:</label>
+        <select id="course" name="course">
+            <option value="python">Python - დაწყებითი</option>
+            <option value="javascript">JavaScript - საშუალო</option>
+            <option value="frontend">Frontend - ვებ დიზაინი</option>
+        </select>
+
+        <button type="submit">დარეგისტრირდი</button>
+    </form>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>კურსების არჩევა</title>
+</head>
+<body>
+
+<h1>აირჩიეთ კურსი</h1>
+
+<select id="course" onchange="showInfo()">
+    <option value="">-- აირჩიეთ კურსი --</option>
+    <option value="javascript">JavaScript</option>
+    <option value="python">Python</option>
+    <option value="frontend">Frontend</option>
+</select>
+
+<p id="info"></p>
+
+<script>
+    function showInfo() {
+        var course = document.getElementById("course").value;
+        var info = document.getElementById("info");
+        
+        if (course === "javascript") {
+            info.innerHTML = "JavaScript: თქვენ შეისწავლით, როგორ შექმნათ დინამიური ვებ გვერდები.";
+        } else if (course === "python") {
+            info.innerHTML = "Python: თქვენ შეისწავლით პროგრამირების საფუძვლებს და ოპერაციებს.";
+        } else if (course === "frontend") {
+            info.innerHTML = "Frontend: შეისწავლით HTML, CSS და JavaScript-ის გამოყენებით ვებ გვერდების შექმნას.";
+        } else {
+            info.innerHTML = "";
+        }
+    }
+</script>
+
+</body>
+</html>
